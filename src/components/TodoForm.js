@@ -16,7 +16,7 @@ class TodoForm extends Component {
 	// ! submit form
 	handleSubmit = (e) => {
 		e.preventDefault();
-		this.props.addItem(this.state.itemName);
+		this.props.addTask(this.state.task);
 	};
 
 	// ! render form

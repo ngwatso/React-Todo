@@ -4,13 +4,13 @@ class TodoForm extends Component {
 	constructor() {
 		super();
 		this.state = {
-			itemName: "",
+			task: "",
 		};
 	}
 
 	// ! update state with each keystroke
 	handleChanges = (e) => {
-		this.setState({ itemName: e.target.value });
+		this.setState({ task: e.target.value });
 	};
 
 	// ! submit form
@@ -25,7 +25,7 @@ class TodoForm extends Component {
 			<form onSubmit={this.handleSubmit}>
 				<input
 					onChange={this.handleChanges}
-					value={this.state.itemName}
+					value={this.state.task}
 					type="text"
 					name="item"
 				/>

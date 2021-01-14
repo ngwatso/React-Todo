@@ -4,7 +4,7 @@ import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import "./components/Todo.css";
 
-const todo = [{ name: "", id: "", completed: "" }];
+const todo = [{ name: "dishes", id: "1234", completed: false }];
 class App extends React.Component {
 	// you will need a place to store your state in this component.
 	// design `App` to be the parent component of your application.
@@ -32,6 +32,7 @@ class App extends React.Component {
 				if (item.id === taskId) {
 					return { ...item, completed: !item.completed };
 				}
+				return item;
 			}),
 		});
 	};

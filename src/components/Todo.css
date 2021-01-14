@@ -1,0 +1,82 @@
+body {
+	background-color: #fff5ee;
+}
+
+.App {
+	margin: 10% auto;
+	height: 50vh;
+	width: 50%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7.5%;
+	background: rgb(159, 161, 140);
+	background: rgb(0, 139, 139);
+	background: radial-gradient(
+		circle,
+		rgba(0, 139, 139, 1) 0%,
+		rgba(159, 161, 140, 1) 46%,
+		rgba(0, 139, 139, 1) 100%
+	);
+	border: 1px solid black;
+	padding: 2% 5%;
+}
+
+.header {
+	border: 1px dotted yellow;
+	width: 50%;
+	height: 30%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+form {
+	width: 100%;
+}
+
+.form-container {
+	border: 1px solid gray;
+	margin: 0 auto;
+	width: 65%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.input {
+	width: 65%;
+}
+
+button {
+	background-color: #56938b;
+	border-radius: 0.3rem;
+}
+
+.task-list-container {
+	border: 1px dotted green;
+	display: flex;
+	flex-flow: column wrap;
+	margin: 5%;
+	border: 1px solid blue;
+	width: 90%;
+	height: 90%;
+}
+
+.todo-list {
+	height: 75%;
+	width: 75%;
+}
+
+.list {
+	border: 1px solid red;
+	display: flex;
+	flex-flow: column wrap;
+	/* height: 75%; */
+	/* width: 90%; */
+	/* margin: 5% 0; */
+}
+
+.button {
+	border: 1px dotted purple;
+}
